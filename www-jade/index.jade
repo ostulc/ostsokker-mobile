@@ -1,0 +1,52 @@
+//
+  Licensed to the Apache Software Foundation (ASF) under one
+  or more contributor license agreements.  See the NOTICE file
+  distributed with this work for additional information
+  regarding copyright ownership.  The ASF licenses this file
+  to you under the Apache License, Version 2.0 (the
+  "License"); you may not use this file except in compliance
+  with the License.  You may obtain a copy of the License at
+  
+  http://www.apache.org/licenses/LICENSE-2.0
+  
+  Unless required by applicable law or agreed to in writing,
+  software distributed under the License is distributed on an
+  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+  KIND, either express or implied.  See the License for the
+  specific language governing permissions and limitations
+  under the License.
+
+doctype html
+html
+  head
+    meta(charset="utf8")
+    meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui")
+    meta(name="mobile-web-app-capable" content="yes")
+    meta(name="apple-mobile-web-app-capable" content="yes")
+    meta(name="apple-mobile-web-app-status-bar-style" content="black")
+    meta(name="theme-color" content="#4caf50")
+    title ostSokker Mobile
+    link(rel="stylesheet" href="./f7/css/framework7.material.css")
+    link(rel="stylesheet" href="./f7/css/framework7.material.colors.css")
+    link(rel="stylesheet" href="./css/editor.css")
+    link(href="http://fonts.googleapis.com/css?family=Roboto:400,300,500,700" rel="stylesheet" type="text/css")
+    link(href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css", rel="stylesheet", integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1", crossorigin="anonymous")
+    link(rel="icon" href="img/icon.png")
+  body.theme-green
+    .statusbar-overlay
+    .panel-overlay
+    .views
+      .view.view-main
+        .pages.navbar-fixed
+          include ./pages/main.jade
+          include ./pages/tactic.jade
+
+    
+    script(type="text/javascript" src="cordova.js")
+    script(type="text/javascript" src="./lib/jquery.js")
+    script(type="text/javascript" src="./lib/interact.js")
+    script(type="text/javascript" src="./f7/framework7.js")
+    script(type="text/javascript" src="./js/app.js")
+    script(type="text/javascript" src="./js/editor.js")
+    script(type="text/javascript").
+      init()
